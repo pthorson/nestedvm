@@ -70,7 +70,7 @@ $(top_lev_stuff):
 tasks/download_%:
 	if [ -z "$(url_$*)" ]; then echo "No url for $*" >&2; false; fi
 	mkdir -p download
-	cd download && curl -LO $(url_$*)
+	cd download && curl -k -LO $(url_$*)
 	touch $@
 
 tasks/extract_%: tasks/download_%
