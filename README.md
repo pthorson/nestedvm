@@ -1,5 +1,6 @@
 ﻿nestedvm, ported to OSX 10.9, using gcc 4.9.3 and Java 1.8
 ========
+2016/09/19 - just forked to add -k to curl in one of the makefiles to see if that gets around corporate firewall injecting itself into the CA chain.
 
 11/27/2014
 Yet another fork of NestedVM from nestedvm.ibex.org.  This fork integrates multiple patches and additions since 2009,
