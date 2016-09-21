@@ -145,7 +145,7 @@ patches_gcc = gcc.patch
 
 configure_gcc = --target=mips-unknown-elf --disable-threads --disable-libssp --with-gnu-ld --with-gnu-as --with-newlib=yes --enable-sjlj-exceptions --enable-languages="c" --with-gmp=/usr/local/Cellar/gmp/6.0.0a --with-mpfr=/usr/local/Cellar/mpfr/3.1.2-p10 --with-mpc=/usr/local/Cellar/libmpc/1.0.2
 
-configure_gcc_step2 = $(configure_gcc) --enable-languages="c,c++,f77"
+configure_gcc_step2 = $(configure_gcc) --enable-languages="c,c++"
 
 tasks/build_gcc: tasks/build_linker
 
